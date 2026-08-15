@@ -1,13 +1,14 @@
+
 <!doctype html>
 <html lang="tr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f5efe4">
-<title>Sevgili Oğlum Melehan — Sünnet Davetiyesi</title>
-<meta name="description" content="Melehan'ın sünnet davetiyesi • 23 Ağustos 2026 • 19:30 • Palmiye Garden, Kaynaklar - BUCA">
+<title>Sevgili Oğlum Metehan — Sünnet Davetiyesi</title>
+<meta name="description" content="Metehan'ın sünnet davetiyesi • 23 Ağustos 2026 • 19:30 • Palmiye Garden, Kaynaklar - BUCA">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Melehan'ın Sünnet Davetiyesi">
+<meta property="og:title" content="Metehan'ın Sünnet Davetiyesi">
 <meta property="og:description" content="23 Ağustos 2026 • 19:30 • Palmiye Garden, Kaynaklar - BUCA">
 <meta name="twitter:card" content="summary">
 <style>
@@ -52,7 +53,7 @@ button,a.btn{border:0;background:#403a32;color:#fff;padding:11px 17px;border-rad
 <div class="content">
   <div class="crown">♛</div>
   <div class="kicker">SEVGİLİ OĞLUM</div>
-  <div class="name">Melehan</div>
+  <div class="name">Metehan</div>
   <div class="subtitle">Erkekliğe<br>ilk adımını atıyor.</div>
   <div class="message">Siz değerli dostlarımızı<br>bu mutlu günümüzde yanımızda<br>görmekten onur duyarız.</div>
   <div class="divider"></div>
@@ -79,13 +80,13 @@ const expiry=new Date("2026-08-25T00:00:00+03:00").getTime();
 function tick(){const left=expiry-Date.now();if(left<=0){document.getElementById("live").style.display="none";document.getElementById("expired").style.display="block";return;}}
 setInterval(tick,1000);tick();
 async function shareInvite(){
- const data={title:"Melehan'ın Sünnet Davetiyesi",text:"23 Ağustos 2026 • 19:30 • Palmiye Garden, Kaynaklar - BUCA",url:location.href};
+ const data={title:"Metehan'ın Sünnet Davetiyesi",text:"23 Ağustos 2026 • 19:30 • Palmiye Garden, Kaynaklar - BUCA",url:location.href};
  if(navigator.share){try{await navigator.share(data)}catch(e){}}
  else{try{await navigator.clipboard.writeText(location.href);alert("Davetiyenin bağlantısı kopyalandı.")}catch(e){prompt("Davetiyenin bağlantısı:",location.href)}}
 }
 function calendar(){
- const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Melehan Davetiye//TR","BEGIN:VEVENT","DTSTART;TZID=Europe/Istanbul:20260823T193000","DTEND;TZID=Europe/Istanbul:20260823T223000","SUMMARY:Melehan'ın Sünnet Daveti","LOCATION:Palmiye Garden, Buca Gölet Yolu Üzeri, Kaynaklar - BUCA","DESCRIPTION:Siz değerli dostlarımızı bu mutlu günümüzde yanımızda görmekten onur duyarız.","END:VEVENT","END:VCALENDAR"].join("\r\n");
- const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));a.download="Melehan-Sunnet-Daveti.ics";a.click();
+ const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Metehan Davetiye//TR","BEGIN:VEVENT","DTSTART;TZID=Europe/Istanbul:20260823T193000","DTEND;TZID=Europe/Istanbul:20260823T223000","SUMMARY:Metehan'ın Sünnet Daveti","LOCATION:Palmiye Garden, Buca Gölet Yolu Üzeri, Kaynaklar - BUCA","DESCRIPTION:Siz değerli dostlarımızı bu mutlu günümüzde yanımızda görmekten onur duyarız.","END:VEVENT","END:VCALENDAR"].join("\r\n");
+ const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));a.download="Metehan-Sunnet-Daveti.ics";a.click();
 }
 </script>
 </body>
